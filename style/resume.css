@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.text_1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.text_2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text_3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+body {
+    background-color: rgb(47, 0, 0);
+}
+
+.site_body {
+    margin: 4px 8px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.094);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+header {
+    padding-top: 8px;
+    margin: 10px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.196);
+    padding: 0px 30px;
+    border-radius: 20px;
+    display: flex;
+
+    .site_logo {
+        padding: 8px;
+        color: white;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: none;
+        padding: 8px;
+
+        @media (min-width: 830px) {
+            margin-left: auto;
+            display: flex;
+        }
+
+        li {
+            padding-left: 20px;
+        }
+    }
+}
+
+/* uniqe for page */
+
+main {
+    margin-top: 20px;
+    margin-right: 2dvw;
+    margin-left: 2dvw;
+    margin-bottom: 20px;
+}
+
+.site_main {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1dvh 1dvw;
+    border-radius: 20px;
+}
+
+.resume_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 6vh;
+    color: white;
+    padding-bottom: 2dvh;
+}
+
+.resume_body {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.107);
+    border-radius: 20px;
+    padding: 2dvh;
+
+}
+
+.resume_head {
+    color: white;
+    font-size: 4dvh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+.resume_con {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2dvh;
+    color: white;
+    padding-left: 2dvw;
+    text-decoration: none;
+}
+
+
+/* uniqe for page end */
+
+.footer_bar {
+    position: fixed;
+    bottom: 8px;
+    left: 10px;
+}
+
+.footer_text {
+    font-size: 12px;
+    padding: 4px 6px;
+    background-color: rgba(255, 255, 255, 0.131);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text_home {
+    display: none;
+}
+
+.resume_download {
+    margin: 2dvh 2vw 2dvh auto;
+    /* width: 100%; */
+
+}
+
+.download_btn {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.467);
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4dvh;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.407);
+    border-radius: 20px;
+}
+
+/* @media (min-width: 830) {
+} */
+
+@media (max-width: 830px) {
+    .text_home {
+        display: flex;
+    }
+
+    header {
+        overflow: hidden;
+    }
+
+    nav {
+        /* position: sticky; */
+        /* top: 4px; */
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 0px 10px;
+        border-radius: 20px;
+        display: flex;
+
+        .site_logo {
+            display: none;
+            /* position: n; */
+            padding: 8px;
+            color: white;
+        }
+
+        .menu {
+            font-size: smaller;
+            list-style-type: none;
+            /* margin-left: auto; */
+            display: flex;
+            padding: 4px;
+            /* padding-left: 1px; */
+
+            @media (min-width: 640px) {
+                display: flex;
+            }
+
+            li {
+                padding-left: 4%;
+            }
+        }
+    }
+
+    .site_main {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 1dvh 2dvw;
+        border-radius: 20px;
+    }
+
+    .resume_text {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 4vh;
+        color: white;
+        padding-bottom: 1dvh;
+    }
+
+    .resume_head {
+        color: white;
+        font-size: 3dvh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+
+    .resume_con {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 2dvh;
+        color: rgb(255, 255, 255);
+
+    }
+}
