@@ -113,7 +113,11 @@ main {
             margin: 10px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             color: black;
-            font-size: 4dvh;
+            font-size: 2dvw;
+        }
+
+        .not_found_message {
+            margin: 2vh;
         }
     }
 
@@ -123,9 +127,8 @@ main {
         border-radius: 20px;
         margin-left: 2dvh;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 3dvh;
         color: rgb(0, 0, 0);
-        font-size: 4dvh;
+        font-size: 2dvw;
     }
 }
 
@@ -161,20 +164,7 @@ main {
         overflow: hidden;
     }
 
-    /* 
-    main {
-        background-color: rgba(255, 255, 255, 0.051);
-        display: block;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 110%;
-    } */
-
-
-
     nav {
-        /* position: sticky; */
-        /* top: 4px; */
         width: 100%;
         background-color: rgba(255, 255, 255, 0.3);
         padding: 0px 10px;
@@ -183,9 +173,6 @@ main {
 
         .site_logo {
             display: none;
-            /* position: n; */
-            padding: 8px;
-            color: white;
         }
 
         .menu {
@@ -228,46 +215,5 @@ main {
         font-size: 4dvw;
         color: white;
     }
-
-    .contact_box {
-        background-color: rgba(255, 255, 255, 0.098);
-        padding: 1dvh 1dvw;
-        border-radius: 20px;
-        margin-top: 8px;
-        margin-left: 0%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 10px;
-        color: white;
-        /* margin-right: auto; */
-        /* display:flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* text-align: center; */
-    }
-
-    .social_icon {
-        margin-left: 10px;
-        margin-right: 4px;
-        height: 20px;
-    }
-
-    .social_icon_l {
-        margin-left: 10px;
-        margin-right: 6px;
-        height: 18px;
-    }
-
-    .social_text {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 2dvw;
-        text-decoration: none;
-        color: white;
-        position: absolute;
-    }
-
-
-
-
-
 
 }
